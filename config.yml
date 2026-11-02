@@ -1,0 +1,20 @@
+# Das Plugin startet einen kleinen HTTP-Server, der das Resource Pack ausliefert.
+# Der Port muss von aussen erreichbar sein (Portfreigabe / Firewall)!
+http:
+  bind: "0.0.0.0"
+  port: 8765
+  # Die URL, unter der Spieler das Pack herunterladen. IP/Domain anpassen!
+  public-url: "http://DEINE-IP-ODER-DOMAIN:8765/mapinslot.zip"
+
+pack:
+  # pack_format deiner Minecraft-Version (1.21.4 = 46, 1.21.5 = 55, 1.21.6 = 63, 1.21.8 = 64)
+  format: 46
+  force: false
+  prompt: "Map in Slot - zeigt Karten im Inventar an"
+
+# Wie oft (in Ticks) die Inventare der Spieler nach Karten durchsucht werden
+scan-interval-ticks: 100
+# Mindestabstand (Sekunden), bevor sich das Bild einer bekannten Karte aktualisiert
+min-refresh-seconds: 120
+# Hintergrundfarbe fuer unerkundete (transparente) Kartenbereiche
+background-color: "#D6C79A"

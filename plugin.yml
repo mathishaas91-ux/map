@@ -1,0 +1,14 @@
+name: MapInSlot
+version: '${project.version}'
+main: dev.mapinslot.paper.MapInSlotPlugin
+api-version: '1.21.4'
+description: Zeigt den Karteninhalt direkt im Inventar-Slot (serverseitig per Resource Pack).
+authors: [MapInSlot]
+commands:
+  mapinslot:
+    description: MapInSlot Verwaltung
+    usage: /mapinslot <resend|rebuild>
+    permission: mapinslot.admin
+permissions:
+  mapinslot.admin:
+    default: op
